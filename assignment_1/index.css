@@ -137,7 +137,6 @@ section:hover {
 
 .profile-section {
   text-align: center;
-
 }
 
 .profile-section p {
@@ -150,6 +149,19 @@ section:hover {
   position: relative;
   display: inline-block;
   margin-bottom: 1rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary-color), #c084fc);
+    z-index: -1;
+    opacity: 0.2;
+  }
 }
 
 img {
@@ -161,19 +173,6 @@ img {
   transition: transform 0.3s ease;
 }
 
-.profile-container::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  right: -10px;
-  bottom: -10px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, var(--primary-color), #c084fc);
-  z-index: -1;
-  opacity: 0.2;
-}
-
 img:hover {
   transform: scale(1.05);
 }
@@ -182,6 +181,10 @@ p {
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
   color: #4b5563;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 strong {
