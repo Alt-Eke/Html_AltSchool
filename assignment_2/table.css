@@ -127,6 +127,7 @@ footer a {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    margin: 3rem auto 0.5rem auto;
   }
 
   th,
