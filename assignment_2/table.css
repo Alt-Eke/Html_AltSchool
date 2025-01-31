@@ -156,5 +156,6 @@ footer a {
 
   .swipe__left {
     display: block;
+    margin-bottom: 2rem;
   }
 }
